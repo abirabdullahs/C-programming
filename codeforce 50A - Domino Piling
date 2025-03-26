@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int m,n;
+    cout << "Enter the length of checkerboard: ";
+    cin >> m;
+
+    cout << "Enter the width of checkerboard: ";
+    cin >> n;
+
+    int N;
+    N= (m*n)/(2*1);
+    cout <<"The number of domino ("<<2<<"cross"<<1<<" ) : "<<N;
+    return 0;
+}
