@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Enter the number of problems: ";
+    cin >> n;
+
+    int solved_problem = 0;
+
+    for (int i = 1; i <= n; i++) {
+        int count = 0; // প্রতিটি সমস্যার জন্য নতুন করে `count` সেট করতে হবে
+        cout << "Enter the status of problem " << i << endl;
+
+        for (int j = 1; j <= 3; j++) {
+            int status;
+            cout << "Friend No. " << j << ": ";
+            cin >> status;
+
+            if (status == 1) {
+                count++;
+            }
+        }
+
+        if (count >= 2) {
+            solved_problem++;
+        }
+    }
+
+    cout << "Number of solved problems: " << solved_problem << endl;
+    return 0;
+}
